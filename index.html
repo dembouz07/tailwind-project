@@ -10,13 +10,14 @@
     <link href="./src/output.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-100">
-    <nav class="bg-white shadow-md border-b-2 border-blue-600">
+    <nav
+      class="bg-white shadow-md border-b-2 border-blue-600 h-20 overflow-hidden">
       <div
-        class="container mx-auto px-4 py-4 flex items-center justify-between">
+        class="container mx-auto px-4 h-full flex items-center justify-between">
 
         <!-- Logo -->
         <a href="index.html" class="text-2xl font-bold text-blue-600">
-          <img src="public/logo.png" alt="Logo" class="h-16 inline-block" />
+          <img src="public/logo.png" alt="Logo" class="h-32 inline-block" />
         </a>
 
         <!-- Menu -->
@@ -45,6 +46,58 @@
       </div>
     </nav>
 
-   
+    <section class="bg-gray-100 py-16">
+      <div
+        class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+        <div>
+          <h1 class="text-blue-600 uppercase tracking-widest text-sm mb-4">
+            Bienvenue chez Groupe 1 AWS re/Start
+          </h1>
+
+          <h1 class="text-5xl font-light text-gray-800 leading-tight mb-6">
+            Découvrez nos <span class="text-blue-600">réalisations</span>
+          </h1>
+
+          <p class="text-gray-600 mb-6">
+            Nous sommes un groupe d'apprenants passionnés au sein d'Orange
+            Digital Center,
+            en formation <strong>AWS re/Start</strong> — un programme intensif
+            axé sur le cloud Amazon Web Services.
+            En parallèle, nous développons des compétences solides en
+            <strong>DevOps</strong> et en <strong>développement web</strong>,
+            alliant automatisation, déploiement continu et création
+            d'applications modernes.
+            Découvrez nos projets et le fruit de notre apprentissage.
+          </p>
+
+          <div class="flex gap-4">
+            <button
+              class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+              Explorer nos projets →
+            </button>
+
+            <button
+              class="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-300 transition">
+              Notre méthodologie
+            </button>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img src="public/groupe1.jpeg" alt="Projet"
+            class="rounded-2xl shadow-lg w-full">
+
+          <div
+            class="absolute bottom-5 left-5 bg-white p-4 rounded-xl shadow-md">
+            <h2 class="text-2xl font-bold text-blue-600">120+</h2>
+            <p class="text-gray-600 text-sm">Projets réalisés</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
   </body>
 </html>
