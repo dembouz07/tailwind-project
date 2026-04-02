@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CI/CD avec GitHub Actions - Groupe 1 AWS re/Start</title>
+        <link rel="icon" type="image/x-icon" href="../../public/favicon.ico" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="../../src/output.css" rel="stylesheet" />
+    </head>
+    <body class="bg-gray-100">
+
+        <!-- ==================== NAVBAR (copiée exactement) ==================== -->
+        <nav class="bg-gray-800 shadow-md border-b-2 border-blue-600 h-20 overflow-hidden">
+            <div class="container mx-auto px-4 h-full flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="../../index.html" class="text-2xl font-bold text-blue-600">
+                    <img src="../../public/logo.png" alt="Logo" class="h-32 inline-block" />
+                </a>
+
+                <!-- Menu -->
+                <ul class="flex items-center space-x-6">
+                    <li>
+                        <a href="../../index.html" class="text-blue-600 hover:text-blue-800 font-medium">
+                            <i class="fas fa-house mr-1"></i> Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html" class="text-blue-600 hover:text-blue-800 font-medium">
+                            <i class="fas fa-briefcase mr-1"></i> Projets
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Bouton Contact -->
+                <button class="cursor-pointer rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 px-3 py-2 transition">
+                    <i class="fas fa-phone text-white"></i>
+                    <a href="../contact.html" class="text-white">Contactez-nous</a>
+                </button>
+
+            </div>
+        </nav>
+
+        <!-- ==================== CONTENU DÉTAIL PROJET 3 ==================== -->
+        <section class="bg-gray-50 py-16">
+            <div class="container mx-auto px-6 max-w-4xl">
+
+                <!-- Bouton Retour -->
+                <a href="projects.html" 
+                   class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium mb-8">
+                    <i class="fas fa-arrow-left"></i>
+                    Retour aux projets
+                </a>
+
+                <!-- Titre du projet -->
+                <h1 class="text-4xl font-bold text-gray-800 mb-6">
+                    CI/CD avec GitHub Actions
+                </h1>
+
+                <!-- Grande image -->
+                <div class="rounded-3xl overflow-hidden shadow-xl mb-10">
+                    <img src="../../public/CI-CD.png" 
+                         alt="CI/CD avec GitHub Actions"
+                         class="w-full h-auto object-cover">
+                </div>
+
+                <!-- Description complète -->
+                <div class="prose prose-lg text-gray-700">
+                    <p class="text-xl leading-relaxed mb-8">
+                        Mise en place d’un pipeline d’intégration et de déploiement continu 
+                        (CI/CD) automatisé avec GitHub Actions.
+                    </p>
+                    <p>
+                        Ce projet consiste à automatiser entièrement le cycle de vie d’une application :
+                        tests automatiques, build, et déploiement sur une instance EC2 à chaque push sur la branche main.
+                    </p>
+
+                    <h2 class="text-2xl font-semibold text-gray-800 mt-12 mb-4">Technologies utilisées</h2>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                        <li>GitHub Actions (workflows YAML)</li>
+                        <li>Node.js / Python</li>
+                        <li>AWS EC2 + SSH deployment</li>
+                        <li>Docker (optionnel)</li>
+                        <li>Tests automatisés</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold text-gray-800 mt-12 mb-4">Ce que j’ai appris</h2>
+                    <p>
+                        Automatisation complète du déploiement, bonne pratique DevOps, 
+                        gain de temps énorme et réduction des erreurs humaines.
+                    </p>
+                </div>
+
+                <!-- Bouton supplémentaire (optionnel) -->
+                <div class="mt-12 flex justify-center">
+                    <a href="../contact.html" 
+                       class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-blue-700 transition shadow-md">
+                        Discuter de ce projet
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FOOTER (copié exactement) ==================== -->
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-2xl font-bold mb-4">Groupe 1 AWS re/Start</h2>
+                <p class="text-gray-400 mb-6">
+                    © 2026 Groupe 1 AWS re/Start. Tous droits réservés.
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-aws"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
